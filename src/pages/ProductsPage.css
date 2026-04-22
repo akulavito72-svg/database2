@@ -1,0 +1,203 @@
+.tech-grid {
+  display: grid;
+  gap: 24px;
+  position: relative;
+}
+
+.tech-exit.ant-btn {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  z-index: 4;
+  height: 40px;
+  border-radius: 15px;
+}
+
+.tech-top.ant-card,
+.tech-list.ant-card {
+  border-radius: 24px;
+  background: #efefef;
+  box-shadow: none;
+}
+
+.tech-top .ant-card-body {
+  min-height: 170px;
+  padding: 34px 60px;
+  display: grid;
+  grid-template-columns: minmax(220px, auto) 1fr;
+  align-items: center;
+  column-gap: 60px;
+}
+
+.tech-title.ant-typography {
+  margin: 0;
+  color: #26292f;
+  font-size: clamp(24px, 2.3vw, 38px);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.tech-find.ant-input-affix-wrapper {
+  height: 88px;
+  border-radius: 22px;
+  border: 0;
+  background: #f4f4f4;
+  padding: 0 30px;
+}
+
+.tech-find.ant-input-affix-wrapper .ant-input-prefix {
+  margin-right: 20px;
+  color: #999ca3;
+  font-size: 52px;
+}
+
+.tech-find.ant-input-affix-wrapper input {
+  font-size: 50px;
+  color: #8d9097;
+  background: transparent;
+}
+
+.tech-find.ant-input-affix-wrapper input::placeholder {
+  color: #9a9da3;
+}
+
+.tech-list .ant-card-body {
+  padding: 44px 60px 40px;
+}
+
+.list-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.list-title.ant-typography {
+  margin: 0;
+  color: #30343a;
+  font-size: clamp(34px, 2.7vw, 60px);
+  line-height: 1;
+  font-weight: 700;
+}
+
+.head-tools {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-sync.ant-btn {
+  width: 74px;
+  height: 74px;
+  border-radius: 18px;
+  border: 1px solid #d8d8da;
+  color: #575a66;
+  font-size: 34px;
+  background: #efefef;
+}
+
+.btn-add.ant-btn {
+  height: 74px;
+  border-radius: 18px;
+  padding: 0 34px;
+  font-size: 48px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(180deg, #3346ee 0%, #2d37d2 100%);
+}
+
+.btn-add.ant-btn .anticon {
+  font-size: 44px;
+}
+
+@media (max-width: 1920px) {
+  .tech-top .ant-card-body {
+    min-height: 120px;
+    padding: 24px 28px;
+    column-gap: 30px;
+  }
+
+  .tech-find.ant-input-affix-wrapper {
+    height: 58px;
+    border-radius: 14px;
+    padding: 0 16px;
+  }
+
+  .tech-find.ant-input-affix-wrapper .ant-input-prefix {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  .tech-find.ant-input-affix-wrapper input {
+    font-size: 20px;
+  }
+
+  .tech-list .ant-card-body {
+    padding: 28px;
+  }
+
+  .list-title.ant-typography {
+    font-size: 40px;
+  }
+
+  .btn-sync.ant-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    font-size: 20px;
+  }
+
+  .btn-add.ant-btn {
+    height: 48px;
+    border-radius: 12px;
+    padding: 0 20px;
+    font-size: 20px;
+    gap: 8px;
+  }
+
+  .btn-add.ant-btn .anticon {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tech-top .ant-card-body {
+    grid-template-columns: 1fr;
+    row-gap: 14px;
+  }
+
+  .list-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .head-tools {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-exit.ant-btn {
+    position: static;
+    justify-self: end;
+    margin-bottom: -8px;
+  }
+
+  .list-title.ant-typography {
+    font-size: 30px;
+  }
+
+  .head-tools {
+    width: 100%;
+  }
+
+  .btn-sync.ant-btn,
+  .btn-add.ant-btn {
+    flex: 1;
+    justify-content: center;
+  }
+}

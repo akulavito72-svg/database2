@@ -1,0 +1,17 @@
+.tech-shell {
+  min-height: 100vh;
+  padding: 42px 56px;
+  background: #e9e9ea;
+}
+
+@media (max-width: 1200px) {
+  .tech-shell {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-shell {
+    padding: 16px;
+  }
+}
