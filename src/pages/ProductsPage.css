@@ -38,6 +38,7 @@
 }
 
 .tech-find.ant-input-affix-wrapper {
+  width: min(100%, 720px);
   height: 88px;
   border-radius: 22px;
   border: 0;
@@ -121,6 +122,7 @@
   }
 
   .tech-find.ant-input-affix-wrapper {
+    width: min(100%, 520px);
     height: 58px;
     border-radius: 14px;
     padding: 0 16px;
